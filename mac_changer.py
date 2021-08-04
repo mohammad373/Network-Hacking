@@ -64,6 +64,7 @@ def mac_changer():
             if name_network not in all_name_network:
                 time.sleep(1)
                 print(Fore.RED + "[-] Your Name Network Is Not Found !!!")
+                sys.exit()
             else:
                 pass
         #_________________________________________________
