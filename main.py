@@ -12,9 +12,13 @@ from baner import baner
 baner()
 time.sleep(1)
 print(Fore.LIGHTBLACK_EX + "        \t\t    [1] ~ MAC Changer")
+time.sleep(0.4)
 print(Fore.LIGHTBLACK_EX + "        \t\t    [2] ~ Scanner Network")
+time.sleep(0.4)
 print(Fore.LIGHTBLACK_EX + "        \t\t    [3] ~ ARP Spoofer")
+time.sleep(0.4)
 print(Fore.LIGHTBLACK_EX + "        \t\t    [4] ~ Internet Diseconnection For Target")
+time.sleep(0.4)
 try:
   number = int(input(Fore.CYAN + "\n\t\t\t        Your Number " + Fore.GREEN + ">>>" + Fore.BLUE + " "))
 except:
@@ -23,7 +27,7 @@ except:
   sys.exit()
 if number == 1:
   import mac_changer
-  mac-changer.mac_changer()
+  mac_changer.mac_changer()
 if number == 2:
   import scanner_network
   scanner_network.scanner_network()
